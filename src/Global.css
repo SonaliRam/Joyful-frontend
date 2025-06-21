@@ -1,0 +1,152 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Source Sans 3", sans-serif;
+  background-color: #f4f4f4;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.parent-of-login {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 25%;
+}
+
+h2 {
+  text-align: center;
+  color: #7d4d0a;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #7d4d0a;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ab6d16;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+#lastbutton {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+button {
+  width: 50%;
+  padding: 12px;
+  margin: 10px 5px 5px 5px;
+  background-color: #ab6d16;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #7d4d0a;
+}
+
+button a {
+  color: white;
+  text-decoration: none;
+}
+/* mobile */
+@media screen and (max-width: 767px) {
+  .parent-of-login {
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+  }
+  .form-container {
+    width: 80%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+  }
+
+  h2 {
+    text-align: center;
+    color: #7d4d0a;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+
+  .input-group {
+    margin-bottom: 15px;
+  }
+
+  .input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #7d4d0a;
+  }
+
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ab6d16;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  #lastbutton {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ab6d16;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #7d4d0a;
+  }
+
+  button a {
+    color: white;
+    text-decoration: none;
+  }
+}
