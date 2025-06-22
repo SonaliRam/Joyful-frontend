@@ -30,7 +30,10 @@ const Navbar = () => {
                 </NavLink>
               </li>
               <li>
+                {/* before */}
                 <NavLink to="/categories" className={getActiveStyle}>
+                  {/* after */}
+                  {/* <NavLink to="/dashboard/categories" className={getActiveStyle}> */}
                   View Product
                 </NavLink>
               </li>
