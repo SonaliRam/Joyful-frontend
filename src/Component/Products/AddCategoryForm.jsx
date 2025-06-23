@@ -73,6 +73,19 @@ const AddCategoryForm = ({ onClose, onCategoryAdded }) => {
               />
             </div>
 
+            {/* <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                Image Path
+              </label>
+              <input
+                type="text"
+                name="imagePath"
+                value={formData.imagePath}
+                onChange={handleChange}
+                placeholder="images/categories/example.jpg"
+                className="w-full border px-4 py-2 rounded"
+              />
+            </div> */}
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">
                 Image Path
@@ -85,6 +98,20 @@ const AddCategoryForm = ({ onClose, onCategoryAdded }) => {
                 placeholder="images/categories/example.jpg"
                 className="w-full border px-4 py-2 rounded"
               />
+              {formData.imagePath && (
+                <div className="mt-2">
+                  <img
+                    src={formData.imagePath}
+                    alt="Preview"
+                    className="h-24 w-24 object-cover border rounded"
+                    onError={(e) => {
+                      e.target.onerror = null;
+                      e.target.src =
+                        "https://via.placeholder.com/100x100?text=Invalid+URL";
+                    }}
+                  />
+                </div>
+              )}
             </div>
 
             <div>
