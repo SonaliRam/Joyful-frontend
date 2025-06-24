@@ -37,7 +37,13 @@ const Navbar = () => {
                   View Product
                 </NavLink>
               </li>
-              {/* Add more nav items here */}
+              <li>
+                <NavLink to="/products" className={getActiveStyle}>
+                  {/* after */}
+                  {/* <NavLink to="/dashboard/categories" className={getActiveStyle}> */}
+                  ADD Product
+                </NavLink>
+              </li>
             </ul>
           </div>
 

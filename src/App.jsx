@@ -4,6 +4,7 @@ import Dashboard from "./DashBoard/Dashboard";
 import ViewEnquiries from "./Dashboard/ViewEnquiries";
 import Product from "./Component/Products/Product";
 import SubcategoryPage from "./Component/SubCategoryPage";
+import ProductList from "./Component/ProductManagement/ProductList";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         </Route>
         <Route path="categories" element={<Product />} />
         <Route path="subcategories/:id" element={<SubcategoryPage />} />
+        <Route path="products" element={<ProductList />}></Route>
       </Routes>
     </BrowserRouter>
   );
